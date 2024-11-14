@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f5e8d7, #f5e8d7);
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+.container {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.7rem;
+  margin-bottom: 3rem;
+  color: #282b24;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+#game {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-gap: 5px;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #282b24;
+  width: max-content;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.tile {
+  width: 80px;
+  height: 80px;
+  font-size: 29px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #f5e8d7;
+  color: #222;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tile:hover {
+  transform: scale(1.05);
+}
+
+.empty {
+  background-color: #f63b1c;
+  box-shadow: none;
+  cursor: default;
+}
+
+button {
+  margin: 20px 0px 34px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+#moveCount {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#message {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #f63b1c;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
