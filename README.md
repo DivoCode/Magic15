@@ -48,13 +48,13 @@ Explanation
 
 ---
 
-CSS Styling
+```CSS Styling
 
 The CSS defines the game’s visual presentation, including the styling of the game grid, tiles, shuffle button, and other elements. Here are the main components of the CSS styling:
 
 Main Styles
 
-```
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -204,9 +204,8 @@ This function updates the displayed move counter.
 
 After each move, checkWin() verifies if the tiles are in sequential order, excluding the empty tile. If they are, a congratulatory message is displayed.
 
-JavaScript Code
+```JavaScript Code
 
-```
 // Get references to the game container, move count display, and message display
 const gameContainer = document.getElementById("game");
 const moveCountDisplay = document.getElementById("moveCount");
